@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Mood Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="theme-toggle" id="themeToggle">🌓</div>
+    
+    <header>
+        <h1 id="mainTitle">Interactive Mood Board</h1>
+        <p class="subtitle" id="subtitle">Express yourself with colors and patterns</p>
+    </header>
+    
+    <main>
+        <section class="controls">
+            <button id="addMoodBtn">Add New Mood</button>
+            <button id="changeColorsBtn">Change Colors</button>
+            <button id="shuffleBtn">Shuffle</button>
+            <button id="infoBtn">Show Info</button>
+        </section>
+        
+        <div class="info-panel" id="infoPanel">
+            <h3>About This Mood Board</h3>
+            <p>This interactive mood board demonstrates various DOM manipulation techniques:</p>
+            <ul>
+                <li>Dynamic element creation and removal</li>
+                <li>Event-driven style changes</li>
+                <li>CSS animations triggered by JavaScript</li>
+                <li>Theme switching capabilities</li>
+                <li>Interactive content that responds to user input</li>
+            </ul>
+            <p>Current Color Scheme:</p>
+            <div id="colorSchemeInfo"></div>
+        </div>
+        
+        <div class="mood-container" id="moodContainer">
+            
+        </div>
+    </main>
+    
+    <footer>
+        <p>Created with JavaScript DOM Manipulation | <span id="currentDate"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
